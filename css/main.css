@@ -1,0 +1,159 @@
+/*Fuente*/
+@import url('https://fonts.googleapis.com/css2?family=Mulish&family=Poppins:wght@300&display=swap');
+
+/*Color de texto notificacion script.js*/
+.notificacion{
+    color: #1722ff;
+    
+}
+
+*{
+    font-family: 'Mulish', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main
+{
+    display: block;
+}
+
+.asignacionMensajero {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    /*Ancho formulario*/    
+    width: 100%;
+    /*largo formulario*/
+    height: 200px;
+    /* centrar vertical y horizontalmente */
+    position: absolute;
+    /*top y left para posicionar*/
+    top: 20%;
+    margin: auto auto auto auto; /* aplicar a top y al margen izquierdo un valor negativo para completar el centrado del elemento hijo */
+}
+
+
+.formFormulario{
+    border: 2px solid #cdd2da;
+    /*Arriba | Derecha | Abajo | Izquierda */
+    margin: 5px auto 5px 300px;
+    text-align: center;
+    background-color: white;
+}
+
+.formFormulario div{
+    /*Arriba | Derecha | Abajo | Izquierda */
+    margin: 2px 1px 2px 1px;
+    background-color: white;
+}
+
+.tituloFormulario{
+    text-align: left;
+    border-bottom: 2px solid #cdd2da;
+}
+
+/*Tamaño logo*/
+.logoFormulario img{ 
+    width: 230px;
+    height: 80px;
+    /* Arriba | Derecha | Abajo | Izquierda */
+    margin: 5px auto 5px auto;
+    background-color: white;
+}
+/*Centramos el logo*/
+.logoFormulario{
+    text-align: center;
+}
+
+.tituloTotalGuias{
+    text-align: center;
+    border-bottom: 2px solid #cdd2da;
+    /*border-bottom: 2px solid #cdd2da;*/
+}
+
+.divtotalGuias{
+    /*Arriba | Derecha | Abajo | Izquierda */
+    margin: 5px 150px 5px 120px;
+    width: 300px;
+}
+
+.totalGuias p{
+    text-align: center;
+    margin: 30px auto 20px auto;
+}
+
+/*Boton descargar*/
+.descargarGuias{
+    margin: 30px auto auto auto;
+}
+
+.botonDescargar{
+    text-align: center;
+}
+
+
+button{
+    color: white;
+    background-color: #1722ff;
+    border-radius: 5px;
+    border: 2px solid #cdd2da;
+    font-weight: 400;
+    font-size: 15px;
+    padding-top:6px;
+    padding-bottom:6px;
+    padding-left:12px;
+    padding-right:12px;
+    
+}
+
+.descargarGuiasExcel:hover {
+    background-color: #008CBA;/*Cambiar de color cuando pasemos el cursor*/
+    color: white;
+    cursor: pointer;/*poner manito cuando pasemos el cursor*/
+}
+
+.descargarGuiasCsv:hover {
+    background-color: #008CBA;/*Cambiar de color cuando pasemos el cursor*/
+    color: white;
+    cursor: pointer;/*poner manito cuando pasemos el cursor*/
+}
+
+.agregarGuias:hover {
+    background-color: #008CBA; /*Cambiar de color cuando pasemos el cursor*/
+    color: white;
+    cursor: pointer; /*poner manito cuando pasemos el cursor*/
+}
+
+.agregarGuias{
+    margin-top: 10px;
+}
+
+label, input, select{
+    font-size: 16px;
+    background-color: white;
+}
+
+input, select{
+    border-radius: 5px;
+    border: 2px solid #cdd2da;
+    height: 25px;
+}
+
+
+footer {
+    background-color: rgb(207, 201, 201);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    color: black
+  }
+
+
+
+
+
+

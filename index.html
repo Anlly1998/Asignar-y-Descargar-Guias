@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+
+crossorigin="anonymous"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Domina Asignacion</title>
+</head>
+<body>
+    <main>
+        <section class="asignacionMensajero">
+            <div class="formulario">
+                <!--action a que archivo se enviara el formulario
+                enctype: tipo de incriptacion!-->
+                <form name="form" action="js/script.js" method="POST" enctype="multipart/form-data" class="formFormulario" id="form">
+                    <div class="tituloFormulario">
+                        <h3>Asignacion mensajero</h2>
+                    </div>
+                    <div class="logoFormulario">
+                        <img src="./font/logo.png" alt="Logo domina">
+                    </div>
+                    <div>
+                        <label for="MenuMensajero">Mensajero</label>
+                        <select name="menuMensajero" id="menuMensajero" required>
+                            <option value="" selected="true" disabled="disabled">Seleccionar un mensajero</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="guia">Guia</label>
+                        <input name= "guia" type="number" id="guia" required>
+                    </div>
+                    <div>
+                        <button class="agregarGuias" id="btnGuardar">Agregar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="totalGuias">
+                <div class="divtotalGuias">
+                    <div class="tituloTotalGuias">
+                        <h3>Total guias asignadas</h3>
+                    </div>
+                    <div>
+                        <p id="totalGuias"> </p>
+                    </div>
+                    <div class="botonDescargar">
+                        <button onclick="location.href='./php/descargarInfoExcel.php' " class="descargarGuiasExcel" id="descargarGuias" >Descargar en Excel</button>
+                        <button onclick="location.href='./php/descargarInfoCSV.php' " class="descargarGuiasCsv" id="descargarGuias" > Descargar en CSV </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        Domina Entrega Total S.A.S.
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
+
+
+
